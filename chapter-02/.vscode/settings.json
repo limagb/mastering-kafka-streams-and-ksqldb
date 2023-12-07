@@ -1,0 +1,9 @@
+{
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-17",
+            "path": "/usr/lib/jvm/temurin-17-jdk-amd64",
+            "default": true
+        }
+    ]
+}

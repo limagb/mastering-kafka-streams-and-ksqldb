@@ -15,10 +15,12 @@ class DslExample {
     StreamsBuilder builder = new StreamsBuilder();
 
     // read from the source topic, "users"
+    // source processor na topologia
     KStream<Void, String> stream = builder.stream("users");
 
     // for each record that appears in the source topic,
     // print the value
+    // stream processor
     stream.foreach(
         (key, value) -> {
           System.out.println("(DSL) Hello, " + value);
